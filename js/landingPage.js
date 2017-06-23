@@ -1,11 +1,13 @@
 landingPageHtml = `
 <div id="upicko_landing_page" class="upicko page-landing responsive components-built" cz-shortcut-listen="true" style="display: none;">
-	<link href="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLWnJ4YWxUaUFITW8" media="screen" rel="stylesheet" type="text/css">
-	<link href="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLT1FpM2RrTDZuc1E" type="text/css" rel="stylesheet">
+	<link href="https://cdn.rawgit.com/UPICKO/external_files/master/css/landingpage.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="https://cdn.rawgit.com/UPICKO/external_files/master/css/sumome-share-client.css" type="text/css" rel="stylesheet">
+	<link href="https://cdn.rawgit.com/UPICKO/external_files/master/css/jquery.bxslider.min.css" type="text/css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/UPICKO/external_files/master/js/jquery.bxslider.min.js"></script>
 
 	<div class="hero-container" style="height: 171px; padding: 30px;">
 		<div class="layout-centered-content">
-			<video autoplay="true" loop="" poster="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLTGZuVmp2NGhjaU0" id="bgvid"></video>
+			<video autoplay="true" loop="" poster="https://cdn.rawgit.com/UPICKO/external_files/master/images/cover_photo_cherry_1920x588.jpg" id="bgvid"></video>
 		    <h1 class="entry-title">Find Australian Upick Farms</h1>    
 		    <h2>Booking tickets and buying fresh foods from pick-your-own farms in Australia</h2>
   		</div>
@@ -17,17 +19,17 @@ landingPageHtml = `
 		<ul class="bxslider">
 			<li>
 				<a href="https://www.upicko.com/?category=u-pick-access&boundingbox=-37.505018%2C140.999279%2C-28.157072%2C153.638516&distance_max=400.2410718492973&lc=-33.876141%2C151.207372&lq=New+South+Wales%2C+Australia&q=NSW">
-			        <img title="Strawberry" src="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLUlExbVNoNVJNY0U" />
+			        <img title="Strawberry" src="https://cdn.rawgit.com/UPICKO/external_files/master/images/mandarin_in_season.png" />
 		      	</a>
 			</li>
 			<li>
 				<a href="https://www.upicko.com/?category=u-pick-access&boundingbox=-37.505018%2C140.999279%2C-28.157072%2C153.638516&distance_max=400.2410718492973&lc=-33.876141%2C151.207372&lq=New+South+Wales%2C+Australia&q=NSW">
-			        <img src="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLRDhyb3dmRTlnLVE" />
+			        <img src="https://cdn.rawgit.com/UPICKO/external_files/master/images/kiwi-fruit_in_season.jpg" />
 		      	</a>
 			</li>
 			<li>
 				<a href="https://www.upicko.com/?category=u-pick-access&boundingbox=-37.505018%2C140.999279%2C-28.157072%2C153.638516&distance_max=400.2410718492973&lc=-33.876141%2C151.207372&lq=New+South+Wales%2C+Australia&q=NSW">
-			        <img src="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLTHJySmYtdTVTMWc" />
+			        <img src="https://cdn.rawgit.com/UPICKO/external_files/master/images/strawberry_in_season.png" />
 		      	</a>
 			</li>
 		</ul>
@@ -37,27 +39,27 @@ landingPageHtml = `
 	    <h1 class="section-header">Explore Farms</h1>
 	    <h2 class="subheader">Find Upick Farms in your city, or explore unique ones around Australia.</h2>
     	<ul class="block-grid cf">
-			<li class="double-wide" style="background:url(https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLd3RwUDJPNUVvcDA) center center no-repeat; background-size:cover;">
+			<li class="double-wide" style="background:url(https://cdn.rawgit.com/UPICKO/external_files/master/images/sydney_620x300.png) center center no-repeat; background-size:cover;">
 				<a href="https://www.upicko.com/?category=u-pick-access&boundingbox=-37.505018%2C140.999279%2C-28.157072%2C153.638516&distance_max=400.2410718492973&lc=-33.876141%2C151.207372&lq=New+South+Wales%2C+Australia&q=NSW">
 			        <span class="label-center">Sydney</span>
 		      	</a>
 		    </li>
-			<li class="no-right-margin" style="background:url(https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLQmNFOUJmS3pTUVk) center center no-repeat; background-size:cover;">
+			<li class="no-right-margin" style="background:url(https://cdn.rawgit.com/UPICKO/external_files/master/images/melbourne_300x300.png) center center no-repeat; background-size:cover;">
 				<a href="https://www.upicko.com/?boundingbox=-39.159093%2C140.961682%2C-33.980647%2C149.976488&distance_max=400.4794017345896&lc=-37.812125%2C144.963319&q=VIC">
 			        <span class="label-center">Melbourne</span>
 		      	</a>
 		    </li>
-      		<li style="background:url(https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLaVAzS3Z6OVNfRlE) center center no-repeat; background-size:cover;">
+      		<li style="background:url(https://cdn.rawgit.com/UPICKO/external_files/master/images/brisbane_300x300.png) center center no-repeat; background-size:cover;">
       			<a href="https://www.upicko.com/?category=u-pick-access&q=QLD">
 	        		<span class="label-center">Brisbane</span>
       			</a>
       		</li>
-      		<li class="" style="background:url(https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLZ01tUk5yQVgzRzQ) center center no-repeat; background-size:cover;">
+      		<li class="" style="background:url(https://cdn.rawgit.com/UPICKO/external_files/master/images/adelaide_300x300.png) center center no-repeat; background-size:cover;">
       			<a href="https://www.upicko.com/?category=u-pick-access&q=SA">
         			<span class="label-center">Adelaide</span>
       			</a>
       		</li>
-      		<li class="no-right-margin" style="background:url(https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLd3JwMjFWazd0WVU) center center no-repeat; background-size:cover;">
+      		<li class="no-right-margin" style="background:url(https://cdn.rawgit.com/UPICKO/external_files/master/images/perth_300x300.png) center center no-repeat; background-size:cover;">
       			<a href="https://www.upicko.com/?category=u-pick-access&q=WA">
         			<span class="label-center">Perth</span>
       			</a>
@@ -71,7 +73,7 @@ landingPageHtml = `
   	<div class="section layout-centered-content">
 		<h1 class="section-header">Featured Farms</h1>
         <ul class="block-grid cf">
-			<li class=" has-link" style="background:url(https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLR3ltQUo5WTdpVDQ) center center no-repeat; background-size:cover;" href="https://www.upicko.com/en/listings/381521-raynerorchard-farms-upick-vic">
+			<li class=" has-link" style="background:url(https://cdn.rawgit.com/UPICKO/external_files/master/images/raynerOrchard_300x300.png) center center no-repeat; background-size:cover;" href="https://www.upicko.com/en/listings/381521-raynerorchard-farms-upick-vic">
 				<a href="https://www.upicko.com/en/listings/381521-raynerorchard-farms-upick-vic">
 					<span class="label-bottom">
 						Rayner Orchard - VIC
@@ -81,7 +83,7 @@ landingPageHtml = `
 					</span>
 				</a>
 			</li>
-			<li class=" has-link" style="background:url(https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLN2huUks5M0hlYzQ) center center no-repeat; background-size:cover;" href="https://www.upicko.com/en/listings/378583-gatewayestate-indoor-strawberry-upick-vic">
+			<li class=" has-link" style="background:url(https://cdn.rawgit.com/UPICKO/external_files/master/images/estateGateway_300x300.png) center center no-repeat; background-size:cover;" href="https://www.upicko.com/en/listings/378583-gatewayestate-indoor-strawberry-upick-vic">
 				<a href="https://www.upicko.com/en/listings/378583-gatewayestate-indoor-strawberry-upick-vic">
 					<span class="label-bottom">
 						Estate Gatweay Indoor Strawberry - VIC          
@@ -91,7 +93,7 @@ landingPageHtml = `
 					</span>
 				</a>
 			</li>
-			<li class="no-right-margin has-link" style="background:url(https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLZ1RqaXJkeUFPUlE) center center no-repeat; background-size:cover;" href="https://www.upicko.com/en/listings/391411-chappies-upick-vic">
+			<li class="no-right-margin has-link" style="background:url(https://cdn.rawgit.com/UPICKO/external_files/master/images/chappies_300x300.png) center center no-repeat; background-size:cover;" href="https://www.upicko.com/en/listings/391411-chappies-upick-vic">
 				<a href="https://www.upicko.com/en/listings/391411-chappies-upick-vic">
 					<span class="label-bottom">
 						Chappies Cherry - VIC          
@@ -107,7 +109,7 @@ landingPageHtml = `
       		<a href="https://www.upicko.com/?category=u-pick-access" style="font-size: 24px; color: #fc913b;">See all of our farms</a>
     	</div>
 	</div>
-	<footer style="background: url(https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLakJoMjJzd2Z4M2s) 0px 0px repeat;">
+	<footer style="background: url(https://cdn.rawgit.com/UPICKO/external_files/master/images/upick_footer_bg.png) 0px 0px repeat;">
 		<div class="layout-centered-content">
 			<div class="row footer-links">
 			  <div class="col-xs-12 col-sm-3">
@@ -157,16 +159,16 @@ landingPageHtml = `
 		<div class="sumome-share-client-show"><span></span></div>
 		<div data-sumome-share-pos="lp" class="sumome-share-client sumome-share-client-left-page sumome-share-client-counts sumome-share-client-light sumome-share-client-medium">
 			<a title="Facebook" class="sumome-share-client-animated sumome-share-client-share sumome-share-client-count" data-sumome-share="facebook" href="javascript:void(0);" style="background: rgb(59, 89, 152); color: rgb(255, 255, 255);">
-				<img src="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLQnFwYWpSV0wxZ1E" alt="Facebook">
+				<img src="https://cdn.rawgit.com/UPICKO/external_files/master/images/facebook-white-60.png" alt="Facebook">
 			</a>
 			<a title="Facebook Like" class="sumome-share-client-animated sumome-share-client-share sumome-share-client-count" data-sumome-share="facebooklike" href="javascript:void(0);" style="background: rgb(90, 115, 157); color: rgb(255, 255, 255);">
-				<img src="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLMGwzalo2X3JVbU0" alt="Facebook Like">
+				<img src="https://cdn.rawgit.com/UPICKO/external_files/master/images/facebooklike-white-60.png" alt="Facebook Like">
 			</a>
 			<a title="Twitter" class="sumome-share-client-animated sumome-share-client-share" data-sumome-share="twitter" href="javascript:void(0);" style="background: rgb(0, 172, 237); color: rgb(255, 255, 255);">
-				<img src="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLeXBFenZoanYyanc" alt="Twitter">
+				<img src="https://cdn.rawgit.com/UPICKO/external_files/master/images/twitter-white-60.png" alt="Twitter">
 			</a>
 			<a title="SumoMe" class="sumome-share-client-animated sumome-share-client-share" data-sumome-share="sumome" href="javascript:void(0);" style="background: rgb(15, 82, 186); color: rgb(255, 255, 255);">
-				<img src="https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLdzNjVjFRVE1hcnM" alt="SumoMe">
+				<img src="https://cdn.rawgit.com/UPICKO/external_files/master/images/sumome-white-60.png" alt="SumoMe">
 			</a>
 		</div>
 		<div class="sumome-share-client-hide"><span></span></div>
@@ -175,13 +177,7 @@ landingPageHtml = `
 
 <script>
 $(document).ready(function(){
-	$("<link/>", {
-	   rel: "stylesheet",
-	   type: "text/css",
-	   href: "https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLVFg5U2xpVTlVQ2s"
-	}).appendTo("head");
-	$.getScript('https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLa2k2YUZxWFlRRXM', function( data, textStatus, jqxhr ) {
-		$('.bxslider').show();
+	setTimeout(function() {
 		$('.bxslider').bxSlider({
 			minSlides: 3,
 			maxSlides: 3,
@@ -193,8 +189,7 @@ $(document).ready(function(){
 			controls: false,
 			autoHover: true,
 		});
-	});
+	}, 1000);
 });
 </script>
 `;
-
