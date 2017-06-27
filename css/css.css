@@ -1,11 +1,11 @@
 /*Remove Grid button in home page*/
-.home-toolbar-button-group a[title=List] { 
+.home-toolbar-button-group a[title=List] {
     display: none;
 }
 
 /*Text (List, Map) in toolbar button in home page*/
 .home-toolbar-button-text {
-	display: none;
+    display: none;
 }
 
 /*Set the toolbar mini-width in home page*/
@@ -16,20 +16,20 @@
 
 /*Remove the order type drop downlist in home page*/
 #home_toolbar-select-share-type {
-	display: none;
+    display: none;
 }
 
 /*Remove the category type drop downlist in home page*/
 .home-categories-main   {
-	display: none;
+    display: none;
 }
 #home-toolbar-filters .home-toolbar-toggle-container {
-	display: none;
+    display: none;
 }
 
 /*Hide market place banner*/
 .marketplace-lander {
-	display: none;
+    display: none;
 }
 
 /*Make higher custom filter container*/
@@ -39,7 +39,7 @@
 }
 
 .community-customization-wrapper {
-	font-size: 40px;
+    font-size: 40px;
     text-align: center;
     line-height: initial;
     font-weight: bold;
@@ -71,32 +71,32 @@
 }
 
 @media only screen and (min-width: 48em) {
-	.col-9 {
-    	width: 88.0%;
-	    float: left;
-    	padding-left: 0.75em;
-	    padding-right: 0.75em;
-	    margin-bottom: 0;
-	}
+    .col-9 {
+        width: 88.0%;
+        float: left;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+        margin-bottom: 0;
+    }
 
-	.home-map>.map {
-    	margin-top: 10px;
-    	height: 46em;
-	}
-	
-	.home-toolbar {
-		margin-bottom: 0.5em;
-	}
+    .home-map>.map {
+        margin-top: 10px;
+        height: 46em;
+    }
+
+    .home-toolbar {
+        margin-bottom: 0.5em;
+    }
 }
 
 /* Hide the search bar in topbar container */
 #topbar-container .SearchBar__root__2hIPj {
-	display: none;
+    display: none;
 }
 
 .floatLeft {
-	float: left;
-	width: auto;
+    float: left;
+    width: auto;
 }
 
 .SearchBar__form__27PQI {
@@ -104,26 +104,26 @@
 }
 
 @media only screen and (min-width: 1201px) {
-	.bannerTable {
-		display: block;
-	}
+    .bannerTable {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
-	.bannerTable {
-		display: none;
-	}
+    .bannerTable {
+        display: none;
+    }
 }
 
 .bannerTable {
-	height: 100px; 
-	background-size: cover; 
-	background-repeat: no-repeat; 
-	background-position: center center; 
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .bannerTable tbody tr:nth-child(odd) {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 /*Make the "Add new listing" button background as grey*/
@@ -144,22 +144,15 @@
 }
 
 .custom-filter-options input[type="checkbox"] {
-	display: none;
+    display: none;
 }
 
 /* Hide the update view button in filters in home page */
 #desktop-filters #filters button {
-	display: none;
+    display: none;
 }
 
 /*Hide the main content for the home page*/
-#homepage-filters { 
+#homepage-filters {
     display: none;
 }
-
-/* 
-.bxslider {
-    display: none;
-}
- */
-
