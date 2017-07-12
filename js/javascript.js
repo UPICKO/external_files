@@ -498,7 +498,7 @@ $(function() {
             //Add state checkbox in main page
             var stateCheckboxHtml =
                 "<span id='stateCheckboxContainer' class='floatLeft' style='margin-left: 1em; padding-top: 0.5em;'>" +
-                "   <span style='padding-right: 5px;'><b>State: </b></span>" +
+                "   <span style='padding-right: 5px;'><b>STATE: </b></span>" +
                 "   <input type='checkbox' value='NSW'/> NSW " +
                 "   <input type='checkbox' value='VIC'/> VIC " +
                 "   <input type='checkbox' value='QLD'/> QLD " +
@@ -508,11 +508,28 @@ $(function() {
                 "   <input type='checkbox' value='NT'/> NT " +
                 "</span>";
             $(".home-toolbar-button-group").after(stateCheckboxHtml);
-
             var q = getUrlParameter("q");
             if(q) {
                 $('#stateCheckboxContainer input[type=\"checkbox\"]').each(function (index) {
                     if($(this).val() == q) {
+                        $(this).prop("checked",true);
+                    }
+                });
+            }
+
+            //Add category checkbox in main page
+            var stateCheckboxHtml =
+                "<span id='categoryCheckboxContainer' class='floatLeft' style='margin-left: 1em; padding-top: 0.5em;'>" +
+                "   <span style='padding-right: 5px;'><b>Category: </b></span>" +
+                "   <input type='checkbox' value='u-pick-access'/> U-Pick Access " +
+                "   <input type='checkbox' value='food-selling-online'/> Food Selling Online " +
+                "   <input type='checkbox' value='shed-Door-sale'/> Shed Door Sale " +
+                "</span>";
+            $("#stateCheckboxContainer").after(stateCheckboxHtml);
+            var category = getUrlParameter("category");
+            if(category) {
+                $('#categoryCheckboxContainer input[type=\"checkbox\"]').each(function (index) {
+                    if($(this).val() == category) {
                         $(this).prop("checked",true);
                     }
                 });
@@ -535,6 +552,20 @@ $(function() {
                     if(checkbox.prop("checked"))
                         state = checkbox.val();
                     clickStateCheckbox(state);
+                });
+            }
+
+            //Make the category checkbox like radio action
+            if($("#categoryCheckboxContainer").length && $("#categoryCheckboxContainer .iCheck-helper").length) {
+                $("#categoryCheckboxContainer .iCheck-helper").on("click", function() {
+                    var checkedCheckboxContainer = $("#categoryCheckboxContainer").find('.icheckbox_square-orange.checked').find('.iCheck-helper').not(this).parent();
+                    checkedCheckboxContainer.removeClass('checked');
+                    checkedCheckboxContainer.find(':checkbox').prop("checked",false);
+                    var checkbox = $(this).parent().find('input[type=\"checkbox\"]');
+                    var category = "";
+                    if(checkbox.prop("checked"))
+                        category = checkbox.val();
+                    clickCategoryCheckbox(category);
                 });
             }
 
@@ -625,29 +656,31 @@ function setFruitIconInMapForFilter(filterTextInUrl, fruitIconUrl) {
 }
 
 function clickStateCheckbox(state) {
-    var url = "https://www.upicko.com/?category=u-pick-access";
-    switch(state) {
-        case "NSW":
-            url = "https://www.upicko.com/?category=u-pick-access&boundingbox=-37.505018%2C140.999279%2C-28.157072%2C153.638516&distance_max=400.2410718492973&lc=-33.876141%2C151.207372&lq=New+South+Wales%2C+Australia&q=NSW&view=grid";
-            break;
-        case "VIC":
-            url = "https://www.upicko.com/?boundingbox=-39.159093%2C140.961682%2C-33.980647%2C149.976488&distance_max=400.4794017345896&lc=-37.812125%2C144.963319&q=VIC&view=grid";
-            break;
-        case "QLD":
-            url = "https://www.upicko.com/?category=u-pick-access&q=QLD&view=grid";
-            break;
-        case "SA":
-            url = "https://www.upicko.com/?category=u-pick-access&q=SA&view=grid";
-            break;
-        case "TAS":
-            url = "https://www.upicko.com/?category=u-pick-access&q=TAS&view=grid";
-            break;
-        case "WA":
-            url = "https://www.upicko.com/?category=u-pick-access&q=WA&view=grid";
-            break;
-        case "NT":
-            url = "https://www.upicko.com/?category=u-pick-access&q=NT&view=grid";
-            break;
+    var url = window.location.href;
+    var stateInUrl = getUrlParameter("q");
+    if(state) {
+        if(stateInUrl)
+            url = url.replace(stateInUrl, state);
+        else
+            url = url + "&q=" + state;
+    } else {
+        if(stateInUrl)
+            url = url.replace("q=" + stateInUrl, "");
+    }
+    window.location = url;
+}
+
+function clickCategoryCheckbox(category) {
+    var url = window.location.href;
+    var categoryInUrl = getUrlParameter("category");
+    if(category) {
+        if(categoryInUrl)
+            url = url.replace(categoryInUrl, category);
+        else
+            url = url + "&category=" + category;
+    } else {
+        if(categoryInUrl)
+            url = url.replace("category=" + categoryInUrl, "");
     }
     window.location = url;
 }
