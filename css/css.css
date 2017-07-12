@@ -165,3 +165,10 @@
 .SearchBar__form__27PQI {
     width: 300px;
 }
+
+@media only screen and (max-width: 48em) {
+    #stateCheckboxContainer {
+        display: none;
+    }
+}
+
