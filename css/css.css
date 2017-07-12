@@ -156,3 +156,12 @@
 #homepage-filters {
     display: none;
 }
+
+/*Hide the location search*/
+.SearchBar__locationInput__3g__8 {
+    display: none;
+}
+
+.SearchBar__form__27PQI {
+    width: 300px;
+}

@@ -49,47 +49,38 @@ fruitIconsInfo = {
     "mango":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/mango.png",
 };
 
-//Redirect home page with upick access filter
-/*
- if(window.location.href == 'https://www.upicko.com/' || window.location.href == 'https://www.upicko.com') {
- window.location = "https://www.upicko.com/?category=u-pick-access";
- } else if(window.location.href == 'https://www.upicko.com/en/' || window.location.href == 'https://www.upicko.com/en') {
- window.location = "https://www.upicko.com/en/?category=u-pick-access";
- } else if(window.location.href == 'https://www.upicko.com/zh/' || window.location.href == 'https://www.upicko.com/zh') {
- window.location = "https://www.upicko.com/zh/?category=u-pick-access";
- }
- */
+stateInfo = [
+    "NSW", "VIC", "QLD", "SA", "TAS", "WA", "NT"
+]
+
 
 $(function() {
     if(typeof localStorage != 'undefined') {
         var firstTime = localStorage.getItem("first_time");
         if(firstTime != "1") {
-//			alert("firsttime");
             localStorage.setItem("first_time","1");
         }
     }
 
-//	$('#homepage-filters').show();
+    //$('#homepage-filters').show();
     if(window.location.href == 'https://www.upicko.com/' || window.location.href == 'https://www.upicko.com') {
         $('#homepage-filters').remove();
         $("body").append(landingPageHtml);
-// 		$('.bxslider').bxSlider({
-// 			minSlides: 3,
-// 			maxSlides: 3,
-// 			moveSlides: 3,
-// 			slideWidth: 700,
-// 			slideMargin: 10,
-// 			auto: true,
-// 			captions: false,
-// 			controls: false,
-// 			autoHover: true,
-// 		});
     } else if(window.location.href == 'https://www.upicko.com/en/' || window.location.href == 'https://www.upicko.com/en') {
         window.location = "https://www.upicko.com/en/?category=u-pick-access";
     } else if(window.location.href == 'https://www.upicko.com/zh/' || window.location.href == 'https://www.upicko.com/zh') {
         window.location = "https://www.upicko.com/zh/?category=u-pick-access";
     } else {
         $('#homepage-filters').show();
+    }
+
+    // Clear the query text when the query is state
+    if($(".SearchBar__keywordInput__2HTav").length) {
+        var q = getUrlParameter("q");
+        if(q) {
+            if(jQuery.inArray(q, stateInfo) != -1)
+                $(".SearchBar__keywordInput__2HTav").val("")
+        }
     }
 
     if(window.location.href.indexOf("/listings/") > 0) {
@@ -125,8 +116,8 @@ $(function() {
         $(".home-toolbar").next().find('.row').first().remove();
     }
 
-    // Move search bar in home page
     if($("#topbar-container .SearchBar__root__2hIPj").length) {
+        // Move search bar in home page
         $("#topbar-container .SearchBar__root__2hIPj").show();
         if($("#homepage-filters .home-toolbar").length) {
             processMoveSearchBar();
@@ -504,13 +495,50 @@ $(function() {
     if($(".custom-filter-options").length) {
         //Customize the checkbox style
         $.getScript( "https://cdn.rawgit.com/UPICKO/external_files/master/js/icheck.js", function( data, textStatus, jqxhr ) {
+            //Add state checkbox in main page
+            var stateCheckboxHtml =
+                "<span id='stateCheckboxContainer' class='floatLeft' style='margin-left: 1em; padding-top: 0.5em;'>" +
+                "   <span style='padding-right: 5px;'><b>State: </b></span>" +
+                "   <input type='checkbox' value='NSW'/> NSW " +
+                "   <input type='checkbox' value='VIC'/> VIC " +
+                "   <input type='checkbox' value='QLD'/> QLD " +
+                "   <input type='checkbox' value='SA'/> SA " +
+                "   <input type='checkbox' value='TAS'/> TAS " +
+                "   <input type='checkbox' value='WA'/> WA " +
+                "   <input type='checkbox' value='NT'/> NT " +
+                "</span>";
+            $(".home-toolbar-button-group").after(stateCheckboxHtml);
+
+            var q = getUrlParameter("q");
+            if(q) {
+                $('#stateCheckboxContainer input[type=\"checkbox\"]').each(function (index) {
+                    if($(this).val() == q) {
+                        $(this).prop("checked",true);
+                    }
+                });
+            }
+
             $('input:checkbox').iCheck({
                 checkboxClass: 'icheckbox_square-orange',
                 radioClass: 'icheckbox_square-orange'
             });
             $('input:checkbox').show();
 
-            //Make the checkbox like radio action in home page
+            //Make the state checkbox like radio action
+            if($("#stateCheckboxContainer").length && $("#stateCheckboxContainer .iCheck-helper").length) {
+                $("#stateCheckboxContainer .iCheck-helper").on("click", function() {
+                    var checkedCheckboxContainer = $("#stateCheckboxContainer").find('.icheckbox_square-orange.checked').find('.iCheck-helper').not(this).parent();
+                    checkedCheckboxContainer.removeClass('checked');
+                    checkedCheckboxContainer.find(':checkbox').prop("checked",false);
+                    var checkbox = $(this).parent().find('input[type=\"checkbox\"]');
+                    var state = "";
+                    if(checkbox.prop("checked"))
+                        state = checkbox.val();
+                    clickStateCheckbox(state);
+                });
+            }
+
+            //Make the fruit filter checkbox like radio action in home page
             if($(".custom-filter-options").length && $(".custom-filter-options").find('.iCheck-helper').length) {
                 $(".custom-filter-options").find('.iCheck-helper').on("click", function() {
                     var checkedCheckboxContainer = $(".custom-filter-options").find('.icheckbox_square-orange.checked').find('.iCheck-helper').not(this).parent();
@@ -595,6 +623,49 @@ function setFruitIconInMapForFilter(filterTextInUrl, fruitIconUrl) {
         }
     }
 }
+
+function clickStateCheckbox(state) {
+    var url = "https://www.upicko.com/?category=u-pick-access";
+    switch(state) {
+        case "NSW":
+            url = "https://www.upicko.com/?category=u-pick-access&boundingbox=-37.505018%2C140.999279%2C-28.157072%2C153.638516&distance_max=400.2410718492973&lc=-33.876141%2C151.207372&lq=New+South+Wales%2C+Australia&q=NSW&view=grid";
+            break;
+        case "VIC":
+            url = "https://www.upicko.com/?boundingbox=-39.159093%2C140.961682%2C-33.980647%2C149.976488&distance_max=400.4794017345896&lc=-37.812125%2C144.963319&q=VIC&view=grid";
+            break;
+        case "QLD":
+            url = "https://www.upicko.com/?category=u-pick-access&q=QLD&view=grid";
+            break;
+        case "SA":
+            url = "https://www.upicko.com/?category=u-pick-access&q=SA&view=grid";
+            break;
+        case "TAS":
+            url = "https://www.upicko.com/?category=u-pick-access&q=TAS&view=grid";
+            break;
+        case "WA":
+            url = "https://www.upicko.com/?category=u-pick-access&q=WA&view=grid";
+            break;
+        case "NT":
+            url = "https://www.upicko.com/?category=u-pick-access&q=NT&view=grid";
+            break;
+    }
+    window.location = url;
+}
+
+function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
 
 String.prototype.replaceAll = function(search, replace)
 {
