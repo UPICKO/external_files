@@ -115,6 +115,16 @@ $(function() {
             var addressStringFinal = addressString.replaceAll("+", " ");
             $(".map-link").before("<div style='margin-top: 5px;'><i>" + addressStringFinal + "</i></div>");
         }
+
+        //Add farm's name at the beginning of the page
+        if($(".wrapper").length) {
+            var url = window.location.href;
+            var farmNameWidthId = url.substring(35, url.length);
+            var farmNameWithHyphen = farmNameWidthId.substring(farmNameWidthId.indexOf("-") + 1);
+            var farmName = farmNameWithHyphen.replaceAll("-", " ");
+            var farmNameWithCamelCase = toTitleCase(farmName);
+            $(".wrapper").prepend("<div style='margin-bottom: 20px; font-size: 27px'>" + farmNameWithCamelCase + "</div>");
+        }
     }
 
     //Remove the category row in home page
@@ -723,4 +733,10 @@ function checkTemplateLiteralSupported() {
     } catch (e) {
         return false;
     }
+}
+
+function toTitleCase(str) {
+    return str.replace(/(?:^|\s)\w/g, function(match) {
+        return match.toUpperCase();
+    });
 }
