@@ -1,10 +1,5 @@
 landingPageHtml = `
 <div id="upicko_landing_page" class="upicko page-landing responsive components-built" cz-shortcut-listen="true" style="display: none;">
-	<link href="https://cdn.rawgit.com/UPICKO/external_files/master/css/landingpage.css" media="screen" rel="stylesheet" type="text/css">
-	<link href="https://cdn.rawgit.com/UPICKO/external_files/master/css/sumome-share-client.css" type="text/css" rel="stylesheet">
-	<link href="https://cdn.rawgit.com/UPICKO/external_files/master/css/jquery.bxslider.min.css" type="text/css" rel="stylesheet">
-	<script src="https://cdn.rawgit.com/UPICKO/external_files/master/js/jquery.bxslider.min.js"></script>
-
 	<div class="hero-container" style="height: 171px; padding: 30px;">
 		<div class="layout-centered-content">
 			<video autoplay="true" loop="" poster="https://raw.githubusercontent.com/UPICKO/external_files/master/images/strawberry_background_1600x480.png" id="bgvid"></video>
@@ -17,45 +12,45 @@ landingPageHtml = `
 	    <h1 class="section-header">Fruits In Season</h1>
 	    <h2 class="subheader">Find what kind of fruits can be picked in current season.</h2>
 
-    <!-- #region Jssor Slider Begin -->
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://cdn.rawgit.com/UPICKO/external_files/master/images/double-tail-spin.svg" />
-        </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
-            <div>
-                <a href="https://www.upicko.com/?category=u-pick-access&view=grid&checkbox_filter_option_180777=180777"><img data-u="image" src="https://cdn.rawgit.com/UPICKO/external_files/master/images/mandarin_in_season.png" /></a>
-            </div>
-            <div>
-                <a href="https://www.upicko.com/?category=u-pick-access&view=grid&checkbox_filter_option_147326=147326"><img data-u="image" src="https://cdn.rawgit.com/UPICKO/external_files/master/images/kiwi-fruit_in_season.jpg" /></a>
-            </div>
-            <div>
-                <a href="https://www.upicko.com/?category=u-pick-access&view=grid&checkbox_filter_option_147323=147323"><img data-u="image" src="https://cdn.rawgit.com/UPICKO/external_files/master/images/strawberry_in_season.png" /></a>
-            </div>
-            <a data-u="any" href="https://www.upicko.com" style="display:none">upicko slider</a>
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-            <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                </svg>
-            </div>
-        </div>
-        <!-- Arrow Navigator -->
-        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:45px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-            </svg>
-        </div>
-        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:45px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-            </svg>
-        </div>
-    </div>
-    <!-- #endregion Jssor Slider End -->
+		<!-- #region Jssor Slider Begin -->
+		<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+			<!-- Loading Screen -->
+			<div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);">
+				<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="https://cdn.rawgit.com/UPICKO/external_files/master/images/double-tail-spin.svg" />
+			</div>
+			<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+				<div>
+					<a href="https://www.upicko.com/?category=u-pick-access&view=grid&checkbox_filter_option_180777=180777"><img data-u="image" src="https://github.com/UPICKO/external_files/raw/master/images/in_season_fruits/mandarine_620.png" /></a>
+				</div>
+				<div>
+					<a href="https://www.upicko.com/?category=u-pick-access&view=grid&checkbox_filter_option_147326=147326"><img data-u="image" src="https://github.com/UPICKO/external_files/raw/master/images/in_season_fruits/kiwifruit_620.png" /></a>
+				</div>
+				<div>
+					<a href="https://www.upicko.com/?category=u-pick-access&view=grid&checkbox_filter_option_147323=147323"><img data-u="image" src="https://github.com/UPICKO/external_files/raw/master/images/in_season_fruits/strawberries_620.png" /></a>
+				</div>
+				<a data-u="any" href="https://www.upicko.com" style="display:none">upicko slider</a>
+			</div>
+			<!-- Bullet Navigator -->
+			<div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+				<div data-u="prototype" class="i" style="width:16px;height:16px;">
+					<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						<circle class="b" cx="8000" cy="8000" r="5800"></circle>
+					</svg>
+				</div>
+			</div>
+			<!-- Arrow Navigator -->
+			<div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:45px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+				</svg>
+			</div>
+			<div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:45px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+				</svg>
+			</div>
+		</div>
+		<!-- #endregion Jssor Slider End -->
   	</div>
 
 	<div class="section layout-centered-content">
@@ -106,32 +101,48 @@ landingPageHtml = `
 					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/AllBerryPick.png" />
 				</div>
 				<div>
-					<a href="https://www.upicko.com/en/listings/371918-all-berries-upick-vic"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/FordsFarm.png" /></a>
+					<a href="https://www.upicko.com/en/listings/393800-fords-farm-nsw"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/FordsFarm.png" /></a>
 					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/FordsFarm.png" />
 				</div>
 				<div>
-					<a href="https://www.upicko.com/en/listings/371918-all-berries-upick-vic"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/gatewayRealestate.png" /></a>
+					<a href="https://www.upicko.com/en/listings/378583-gatewayestate-indoor-strawberry-upick-vic"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/gatewayRealestate.png" /></a>
 					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/gatewayRealestate.png" />
 				</div>
 				<div>
-					<a href="https://www.upicko.com/en/listings/371918-all-berries-upick-vic"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/goldenGroveOrchard.jpg" /></a>
+					<a href="https://www.upicko.com/en/listings/413579-golden-grove-orchard-wa"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/goldenGroveOrchard.jpg" /></a>
 					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/goldenGroveOrchard.jpg" />
 				</div>
 				<div>
-					<a href="https://www.upicko.com/en/listings/371918-all-berries-upick-vic"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/raynerOrchard.jpg" /></a>
+					<a href="https://www.upicko.com/en/listings/381521-raynerorchard-farms-upick-vic"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/raynerOrchard.jpg" /></a>
 					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/raynerOrchard.jpg" />
 				</div>
 				<div>
-					<a href="https://www.upicko.com/en/listings/371918-all-berries-upick-vic"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/TcpFarm.jpg" /></a>
+					<a href="https://www.upicko.com/en/listings/394719-tcp-farmgate-tours-nsw"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/TcpFarm.jpg" /></a>
 					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/TcpFarm.jpg" />
 				</div>
 				<div>
-					<a href="https://www.upicko.com/en/listings/371918-all-berries-upick-vic"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/tropicalFruitWorld.jpg" /></a>
+					<a href="https://www.upicko.com/en/listings/406365-tropical-fruit-world-qld"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/tropicalFruitWorld.jpg" /></a>
 					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/tropicalFruitWorld.jpg" />
 				</div>
 				<div>
-					<a href="https://www.upicko.com/en/listings/371918-all-berries-upick-vic"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/WatkinFamilyFarm.jpg" /></a>
+					<a href="https://www.upicko.com/en/listings/394402-watkins-family-farm-nsw"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/WatkinFamilyFarm.jpg" /></a>
 					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/WatkinFamilyFarm.jpg" />
+				</div>
+				<div>
+					<a href="https://www.upicko.com/en/listings/399030-turners-beach-berry-patch-tas"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/turners.jpg" /></a>
+					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/turners.jpg" />
+				</div>
+				<div>
+					<a href="https://www.upicko.com/en/listings/393950-kookootonga-chestnut-and-walnut-farm-nsw"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/kookootonga.jpg" /></a>
+					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/kookootonga.jpg" />
+				</div>
+				<div>
+					<a href="https://www.upicko.com/en/listings/394381-kembla-cherry-orchard-nsw"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/kembla.jpg" /></a>
+					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/kembla.jpg" />
+				</div>
+				<div>
+					<a href="https://www.upicko.com/en/listings/401888-appleshack-at-glenbernie-orchard-nsw"><img data-u="image" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/appleshack.png" /></a>
+					<img data-u="thumb" src="https://raw.githubusercontent.com/UPICKO/external_files/master/images/feature_farms/appleshack.png" />
 				</div>
 				<a data-u="any" href="https://www.upicko.com" style="display:none">upicko carousel</a>
 			</div>
@@ -223,7 +234,6 @@ landingPageHtml = `
 </div>
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
-
             var jssor_1_options = {
               $AutoPlay: 1,
               $SlideWidth: 640,
@@ -356,17 +366,6 @@ landingPageHtml = `
         });
     </script>
     <style>
-        /* jssor slider arrow navigator skin 05 css */
-        /*
-        .jssora05l                  (normal)
-        .jssora05r                  (normal)
-        .jssora05l:hover            (normal mouseover)
-        .jssora05r:hover            (normal mouseover)
-        .jssora05l.jssora05ldn      (mousedown)
-        .jssora05r.jssora05rdn      (mousedown)
-        .jssora05l.jssora05lds      (disabled)
-        .jssora05r.jssora05rds      (disabled)
-        */
         .jssora05l, .jssora05r {
             display: block;
             position: absolute;
@@ -394,4 +393,6 @@ landingPageHtml = `
         .jssort01-99-66 .p.pdn .c {    background-position: 50% 50%;    width: 95px;    height: 62px;    border: #000 2px solid;}* html 
         .jssort01-99-66 .c, * html .jssort01-99-66 .pdn .c, * html .jssort01-99-66 .pav .c {width: 99px; height: 66px;}
     </style>
+	<link href="https://cdn.rawgit.com/UPICKO/external_files/master/css/landingpage.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="https://cdn.rawgit.com/UPICKO/external_files/master/css/sumome-share-client.css" type="text/css" rel="stylesheet">
 `;

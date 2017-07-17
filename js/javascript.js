@@ -64,8 +64,14 @@ $(function() {
 
     //$('#homepage-filters').show();
     if(window.location.href == 'https://www.upicko.com/' || window.location.href == 'https://www.upicko.com') {
-        $('#homepage-filters').remove();
-        $("body").append(landingPageHtml);
+        if(!checkTemplateLiteralSupported()) {
+            alert("Your browser is not supported. Please consider using Chrome, Firefox or Microsoft Edge");
+        } else {
+            $('#homepage-filters').remove();
+            $.getScript( "https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLVzZBLTZBZUlWZ0E", function( data, textStatus, jqxhr ) {
+                $("body").append(landingPageHtml);
+            });
+        }
     } else if(window.location.href == 'https://www.upicko.com/en/' || window.location.href == 'https://www.upicko.com/en') {
         window.location = "https://www.upicko.com/en/?category=u-pick-access";
     } else if(window.location.href == 'https://www.upicko.com/zh/' || window.location.href == 'https://www.upicko.com/zh') {
@@ -621,24 +627,23 @@ function processMoveSearchBar() {
 
 function getBannerHtml() {
     var randomInt = Math.floor((Math.random() * featureFarmsInfo.length));
-    return `
-		<table class="bannerTable" style="background-image: url(${featureFarmsInfo[randomInt].imageUrl});">
-			<tr>
-				<td width="34%" style="text-valign: middle;">
-					<h1>
-						Find nearby pick-your-own farms
-						<br/>
-						Buy your access pass online
-					</h1>
-				</td>
-				<td width="66%">
-					<a href="${featureFarmsInfo[randomInt].hrefUrl}">
-						<div style="width: 100%; height: 100px" ></div>
-					</a>
-				</td>
-			</tr>
-		</table>
-	`;
+    return "" +
+        "<table class='bannerTable' style='background-image: url("+featureFarmsInfo[randomInt].imageUrl+");'>" +
+        "	<tr>" +
+        "		<td width='34%' style='text-valign: middle;'>" +
+        "			<h1>" +
+        "				Find nearby pick-your-own farms" +
+        "				<br/>" +
+        "				Buy your access pass online" +
+        "			</h1>" +
+        "		</td>" +
+        "		<td width='66%'>" +
+        "			<a href='"+featureFarmsInfo[randomInt].hrefUrl+"'>" +
+        "				<div style='width: 100%; height: 100px' ></div>" +
+        "			</a>" +
+        "		</td>" +
+        "	</tr>" +
+        "</table>";
 }
 
 function getFruitIconHtmlForFilter(url) {
@@ -710,3 +715,12 @@ String.prototype.replaceAll = function(search, replace)
 
     return this.replace(new RegExp('[' + search + ']', 'g'), replace);
 };
+
+function checkTemplateLiteralSupported() {
+    try {
+        eval("tt=``;");
+        return true;
+    } catch (e) {
+        return false;
+    }
+}

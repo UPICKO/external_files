@@ -178,3 +178,9 @@
     }
 }
 
+/*Make custom filter unscrollable*/
+.custom-filter-options.scrollable {
+    max-height: 11160px;
+    overflow-y: hidden;
+}
+
