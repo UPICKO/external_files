@@ -68,7 +68,7 @@ $(function() {
             alert("Your browser is not supported. Please consider using Chrome, Firefox or Microsoft Edge");
         } else {
             $('#homepage-filters').remove();
-            $("body").append("<div id='spinner_landing_page' style='text-align: center'><img width='80em' src='https://github.com/UPICKO/external_files/raw/master/images/spinner.gif'/></div>");
+            $("body").append("<div id='spinner_landing_page' style='margin-top: 10px; text-align: center'><img width='80em' src='https://github.com/UPICKO/external_files/raw/master/images/spinner.gif'/></div>");
             $.getScript( "https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLVzZBLTZBZUlWZ0E", function( data, textStatus, jqxhr ) {
                 $("body").append(landingPageHtml);
                 $("#spinner_landing_page").remove();
@@ -125,6 +125,14 @@ $(function() {
             var farmNameWithHyphen = farmNameWidthId.substring(farmNameWidthId.indexOf("-") + 1);
             var farmName = farmNameWithHyphen.replaceAll("-", " ");
             var farmNameWithCamelCase = toTitleCase(farmName);
+
+            var state = farmNameWithCamelCase.substring(farmNameWithCamelCase.lastIndexOf(" ") + 1, farmNameWithCamelCase.length);
+            var upperCaseState = state.toUpperCase();
+            if(jQuery.inArray(upperCaseState, stateInfo) != -1) {
+                var farmnameWithoutState = farmNameWithCamelCase.substring(0, farmNameWithCamelCase.lastIndexOf(" "));
+                farmNameWithCamelCase = farmnameWithoutState + " - " + upperCaseState;
+            }
+
             $(".wrapper").prepend("<div style='margin-bottom: 20px; font-size: 27px'>" + farmNameWithCamelCase + "</div>");
         }
     }
