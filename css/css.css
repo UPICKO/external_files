@@ -59,7 +59,7 @@
 }
 
 .col-3 {
-    width: 12%;
+    width: 14%;
     float: left;
     padding-left: 0.75em;
     padding-right: 0.75em;
@@ -72,7 +72,7 @@
 
 @media only screen and (min-width: 48em) {
     .col-9 {
-        width: 88.0%;
+        width: 86.0%;
         float: left;
         padding-left: 0.75em;
         padding-right: 0.75em;
@@ -116,7 +116,7 @@
 }
 
 .bannerTable {
-    height: 100px;
+    height: 145px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -183,3 +183,12 @@
     overflow-y: hidden;
 }
 
+/*Hide the filter title*/
+.custom-filter-title {
+    display: none;
+}
+
+/*Make the line space narrower between banner and main content*/
+.page-content.no-cover-photo {
+    padding-top: 15px;
+}

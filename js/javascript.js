@@ -142,20 +142,15 @@ $(function() {
         $(".home-toolbar").next().find('.row').first().remove();
     }
 
-    if($("#topbar-container .SearchBar__root__2hIPj").length) {
-        // Move search bar in home page
-        $("#topbar-container .SearchBar__root__2hIPj").show();
-        if($("#homepage-filters .home-toolbar").length) {
-            processMoveSearchBar();
-            $(window).resize(function() {
-                processMoveSearchBar();
-            });
-        }
-    }
-
     //Add banner page with search box in home page
     if($(".home-toolbar").length && $(".Topbar__topbar__7GUWt").length) {
         $(".Topbar__topbar__7GUWt").after(getBannerHtml());
+        // Move search bar in home page
+        $("#topbar-container .SearchBar__root__2hIPj").show();
+        processMoveSearchBar();
+        $(window).resize(function() {
+            processMoveSearchBar();
+        });
     }
 
     //Display marketing banner on home page for private web mode
@@ -523,7 +518,7 @@ $(function() {
         $.getScript( "https://cdn.rawgit.com/UPICKO/external_files/master/js/icheck.js", function( data, textStatus, jqxhr ) {
             //Add state checkbox in main page
             var stateCheckboxHtml =
-                "<span id='stateCheckboxContainer' class='floatLeft' style='margin-left: 1em; padding-top: 0.5em;'>" +
+                "<span id='stateCheckboxContainer' class='floatLeft' style='padding-top: 0.5em;'>" +
                 "   <span style='padding-right: 5px;'><b>STATE: </b></span>" +
                 "   <input type='checkbox' value='NSW'/> NSW " +
                 "   <input type='checkbox' value='VIC'/> VIC " +
@@ -637,7 +632,7 @@ function processMoveSearchBar() {
     if($(window).width() >= 1270) {
         var element = $(".SearchBar__root__2hIPj").detach();
         element.addClass("floatLeft");
-        $("#homepage-filters .home-toolbar").prepend(element);
+        $("#bannerDesc").after(element);
     } else {
         var element = $(".SearchBar__root__2hIPj").detach();
         element.removeClass("floatLeft");
@@ -650,8 +645,8 @@ function getBannerHtml() {
     return "" +
         "<table class='bannerTable' style='background-image: url("+featureFarmsInfo[randomInt].imageUrl+");'>" +
         "	<tr>" +
-        "		<td width='34%' style='text-valign: middle;'>" +
-        "			<h1>" +
+        "		<td width='34%' style='text-valign: middle; padding-left: 20px'>" +
+        "			<h1 id='bannerDesc'>" +
         "				Find nearby pick-your-own farms" +
         "				<br/>" +
         "				Buy your access pass online" +
