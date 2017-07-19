@@ -213,7 +213,7 @@ landingPageHtml = `
 		<label for="focus_retriever" style="position:absolute;left:-1000px;">Focus Retriever</label>
 		<input style="position:absolute;left:-1000px;" type="text" name="focus_retriever" value="" id="focus_retriever" readonly="true">
 	</div>
-	<div class="sumome-share-client-wrapper sumome-share-client-wrapper-left-page sumome-share-client-counts sumome-share-client-light sumome-share-client-medium" style="top: 331px;">
+	<div id="socialContainerLandingPage" class="sumome-share-client-wrapper sumome-share-client-wrapper-left-page sumome-share-client-counts sumome-share-client-light sumome-share-client-medium" style="top: 331px;">
 		<div class="sumome-share-client-show"><span></span></div>
 		<div data-sumome-share-pos="lp" class="sumome-share-client sumome-share-client-left-page sumome-share-client-counts sumome-share-client-light sumome-share-client-medium">
 			<a title="Facebook" class="sumome-share-client-animated sumome-share-client-share sumome-share-client-count" data-sumome-share="facebook" href="javascript:void(0);" style="background: rgb(59, 89, 152); color: rgb(255, 255, 255);">

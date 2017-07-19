@@ -192,3 +192,17 @@
 .page-content.no-cover-photo {
     padding-top: 15px;
 }
+
+/*Show social container*/
+@media only screen and (min-width: 48em) {
+    #socialContainerLandingPage {
+        display: block;
+    }
+}
+/*Hide social container*/
+@media only screen and (max-width: 48em) {
+    #socialContainerLandingPage {
+        display: none;
+    }
+}
+
