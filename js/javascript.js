@@ -71,7 +71,6 @@ $(function() {
             $("body").append("<div id='spinner_landing_page' style='margin-top: 10px; text-align: center'><img width='80em' src='https://github.com/UPICKO/external_files/raw/master/images/spinner.gif'/></div>");
             $.getScript( "https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLVzZBLTZBZUlWZ0E", function( data, textStatus, jqxhr ) {
                 $("body").append(landingPageHtml);
-                $("#spinner_landing_page").remove();
             });
         }
     } else if(window.location.href == 'https://www.upicko.com/en/' || window.location.href == 'https://www.upicko.com/en') {
@@ -624,7 +623,10 @@ $(function() {
 });
 
 $(window).on('load', function () {
-    $("#upicko_landing_page").show();
+    if($("#upicko_landing_page").length)
+        $("#upicko_landing_page").show();
+    if($("#spinner_landing_page").length)
+        $("#spinner_landing_page").remove();
 });
 
 // Move search bar function
