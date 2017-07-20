@@ -1,56 +1,60 @@
 //NO PYO AVAILABLE! SHED DOOR SALES ONLY.
 featureFarmsInfo = [
-    {imageUrl:"https://github.com/UPICKO/external_files/raw/master/images/banner_example_etsy_rayner.png", hrefUrl:"https://www.upicko.com/en/listings/381521-raynerorchard-farms-upick-vic"},
-// 	{imageUrl:"https://github.com/UPICKO/external_files/raw/master/images/banner_example_etsy_gateway.png", hrefUrl:"https://www.upicko.com/en/listings/378583-gatewayestate-indoor-strawberry-upick-vic"}
+    {imageUrl:"https://raw.githubusercontent.com/UPICKO/external_files/master/images/banner_example_etsy_rayner.png", hrefUrl:"https://www.upicko.com/en/listings/381521-raynerorchard-farms-upick-vic"},
+// 	{imageUrl:"https://raw.githubusercontent.com/UPICKO/external_files/master/images/banner_example_etsy_gateway.png", hrefUrl:"https://www.upicko.com/en/listings/378583-gatewayestate-indoor-strawberry-upick-vic"}
 ];
 
 fruitIconsInfo = {
-    "apple":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/apple.png",
-    "blackberries":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/blackberries.png",
-    "blackcurrant":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/blackcurrant.png",
-    "blueberries":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/blueberries.png",
-    "capsicum":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/capsicum.png",
-    "cheries":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/cheries.png",
-    "chestnuts":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/chestnuts.png",
-    "gooseberries":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/gooseberries.png",
-    "grapes":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/grapes.png",
-    "lemon":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/lemon.png",
-    "mandarine":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/mandarine.png",
-    "oranges":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/oranges.png",
-    "plums":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/plums.png",
-    "raspbeerries":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/raspbeerries.png",
-    "strawberries":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/strawberries.png",
-    "tomatos":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/tomatos.png",
-    "kiwifruit":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/kiwifruit.png",
-    "nectarines":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/nectarines.png",
-    "peaches":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/peaches.png",
-    "apricots":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/apricots.png",
-    "figs":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/figs.png",
-    "bayberries":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/bayberries.png",
-    "quinces":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/quinces.png",
-    "boysonberries":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/boysonberries.png",
-    "vegies":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/vegies.png",
-    "sourcherries":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/sourcherries.png",
-    "christmas_tree":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/christmas_tree.png",
-    "pear":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/pear.png",
-    "fruits":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/fruits.png",
-    "loquat":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/loquat.png",
-    "wattermelon":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/wattermelon.png",
-    "longan":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/longan.png",
-    "youngberry":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/youngberry.png",
-    "loganberry":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/loganberry.png",
-    "marionberry":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/marionberry.png",
-    "walnuts":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/walnuts.png",
-    "honey":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/honey.png",
-    "persimmons":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/persimmons.png",
-    "feijoas":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/feijoas.png",
-    "tropicalFruits":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/tropicalFruits.png",
-    "chocolate":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/chocolate.png",
-    "mango":"https://github.com/UPICKO/external_files/raw/master/images/fruit_icon_png/mango.png",
+    "apple":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/apple.png",  
+    "blackberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/blackberries.png",
+    "blackcurrant":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/blackcurrant.png",
+    "blueberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/blueberries.png",
+    "capsicum":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/capsicum.png",
+    "cheries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/cheries.png",
+    "chestnuts":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/chestnuts.png",
+    "gooseberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/gooseberries.png",
+    "grapes":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/grapes.png",
+    "lemon":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/lemon.png",
+    "mandarine":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/mandarine.png",
+    "oranges":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/oranges.png",
+    "plums":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/plums.png",
+    "raspbeerries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/raspbeerries.png",
+    "strawberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/strawberries.png",
+    "tomatos":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/tomatos.png",
+    "kiwifruit":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/kiwifruit.png",
+    "nectarines":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/nectarines.png",
+    "peaches":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/peaches.png",
+    "apricots":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/apricots.png",
+    "figs":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/figs.png",
+    "bayberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/bayberries.png",
+    "quinces":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/quinces.png",
+    "boysonberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/boysonberries.png",
+    "vegies":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/vegies.png",
+    "sourcherries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/sourcherries.png",
+    "christmas_tree":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/christmas_tree.png",
+    "pear":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/pear.png",
+    "fruits":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/fruits.png",
+    "loquat":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/loquat.png",
+    "wattermelon":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/wattermelon.png",
+    "longan":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/longan.png",
+    "youngberry":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/youngberry.png",
+    "loganberry":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/loganberry.png",
+    "marionberry":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/marionberry.png",
+    "walnuts":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/walnuts.png",
+    "honey":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/honey.png",
+    "persimmons":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/persimmons.png",
+    "feijoas":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/feijoas.png",
+    "tropicalFruits":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/tropicalFruits.png",
+    "chocolate":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/chocolate.png",
+    "mango":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/mango.png",
 };
 
 stateInfo = [
     "NSW", "VIC", "QLD", "SA", "TAS", "WA", "NT"
+]
+
+inSeasonFruits = [
+    "Mandarines", "Kiwi Fruit", "Strawberries"
 ]
 
 
@@ -68,7 +72,7 @@ $(function() {
             alert("Your browser is not supported. Please consider using Chrome, Firefox or Microsoft Edge");
         } else {
             $('#homepage-filters').remove();
-            $("body").append("<div id='spinner_landing_page' style='margin-top: 10px; text-align: center'><img width='80em' src='https://github.com/UPICKO/external_files/raw/master/images/spinner.gif'/></div>");
+            $("body").append("<div id='spinner_landing_page' style='margin-top: 10px; text-align: center'><img width='80em' src='https://raw.githubusercontent.com/UPICKO/external_files/master/images/spinner.gif'/></div>");
             $.getScript( "https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLVzZBLTZBZUlWZ0E", function( data, textStatus, jqxhr ) {
                 $("body").append(landingPageHtml);
                 $("#spinner_landing_page").remove();
@@ -519,6 +523,18 @@ $(function() {
     }
 
     if($(".custom-filter-options").length) {
+        //Add in season section
+        var inSeasonHtml = "<div><img width='110px' src='https://raw.githubusercontent.com/UPICKO/external_files/master/images/in_season.png'/></div><div id='inSeasonFilters' style='margin-bottom: 10px; margin-left: 20px;'></div>";
+        $(".custom-filter-options").before(inSeasonHtml);
+        $(".custom-filter-options").find(".custom-filter-checkbox-container").each(function (index) {
+            var fruit = $.trim($(this).find(".custom-filter-checkbox-label-text").html());
+            if(jQuery.inArray(fruit, inSeasonFruits) != -1) {
+                var element = $(this).detach();
+                $("#inSeasonFilters").append(element);
+            }
+        });
+        $('input:checkbox').show();
+
         //Customize the checkbox style
         $.getScript( "https://cdn.rawgit.com/UPICKO/external_files/master/js/icheck.js", function( data, textStatus, jqxhr ) {
             //Add state checkbox in main page
@@ -596,20 +612,20 @@ $(function() {
             }
 
             //Make the fruit filter checkbox like radio action in home page
-            if($(".custom-filter-options").length && $(".custom-filter-options").find('.iCheck-helper').length) {
-                $(".custom-filter-options").find('.iCheck-helper').on("click", function() {
-                    var checkedCheckboxContainer = $(".custom-filter-options").find('.icheckbox_square-orange.checked').find('.iCheck-helper').not(this).parent();
+            if($("#filters").length && $("#filters").find('.iCheck-helper').length) {
+                $("#filters").find('.iCheck-helper').on("click", function() {
+                    var checkedCheckboxContainer = $("#filters").find('.icheckbox_square-orange.checked').find('.iCheck-helper').not(this).parent();
                     checkedCheckboxContainer.removeClass('checked');
                     checkedCheckboxContainer.find(':checkbox').prop("checked",false);
                     //Click the "update view" button
                     $("#desktop-filters #filters button").click();
                 });
 
-                $(".custom-filter-options").find('.custom-filter-checkbox-label-text').on("click", function() {
+                $("#filters").find('.custom-filter-checkbox-label-text').on("click", function() {
                     $(this).parent().find('.icheckbox_square-orange ins').click();
                     return false;
                 });
-                $(".custom-filter-options").find('img').on("click", function() {
+                $("#filters").find('img').on("click", function() {
                     $(this).parent().find('.icheckbox_square-orange ins').click();
                     return false;
                 });
