@@ -116,7 +116,7 @@
 }
 
 .bannerTable {
-    height: 100px;
+    height: 145px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -186,4 +186,22 @@
 /*Hide the filter title*/
 .custom-filter-title {
     display: none;
+}
+
+/*Make the line space narrower between banner and main content*/
+.page-content.no-cover-photo {
+    padding-top: 15px;
+}
+
+/*Show social container*/
+@media only screen and (min-width: 48em) {
+    #socialContainerLandingPage {
+        display: block;
+    }
+}
+/*Hide social container*/
+@media only screen and (max-width: 48em) {
+    #socialContainerLandingPage {
+        display: none;
+    }
 }
