@@ -5,7 +5,7 @@ featureFarmsInfo = [
 ];
 
 fruitIconsInfo = {
-    "apple":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/apple.png",  
+    "apple":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/apple.png",
     "blackberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/blackberries.png",
     "blackcurrant":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/blackcurrant.png",
     "blueberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/blueberries.png",
@@ -639,10 +639,15 @@ $(function() {
 });
 
 $(window).on('load', function () {
-    if($("#upicko_landing_page").length)
+    if($("#upicko_landing_page").length) {
         $("#upicko_landing_page").show();
-    if($("#spinner_landing_page").length)
+        setTimeout(function() {
+            $(".sumome-share-client").attr("style", "display: inline !important");
+        }, 2000);
+    }
+    if($("#spinner_landing_page").length) {
         $("#spinner_landing_page").remove();
+    }
 });
 
 // Move search bar function

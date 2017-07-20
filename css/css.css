@@ -205,3 +205,16 @@
         display: none;
     }
 }
+
+.sumome-control {
+    display: none !important;
+}
+
+.sumome-ga-hud {
+    display: none !important;
+}
+
+.sumome-share-client {
+    display: none !important;
+}
+
