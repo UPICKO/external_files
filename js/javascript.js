@@ -57,6 +57,17 @@ inSeasonFruits = [
     "Mandarines", "Kiwi Fruit", "Strawberries"
 ]
 
+titleText = "" +
+    "<div style='padding: 5px;'>" +
+    "   <div style='margin-bottom: 5px;'>" +
+    "       <b>Upicko Certified Farm</b>" +
+    "   </div>" +
+    "   <ol style='list-style: decimal; margin-left: 30px; margin-right: 20px;'>" +
+    "       <li>Information updated in real time by farmer</li>" +
+    "       <li>Buy fresh fruit/vegie online from farm</li>" +
+    "       <li>Send private message to farmers</li>" +
+    "   </ol>" +
+    "</div>";
 
 $(function() {
     if(typeof localStorage != 'undefined') {
@@ -635,6 +646,74 @@ $(function() {
                 $(window).scrollTop(sessionStorage.scrollTop);
             }
         });
+
+        // Add certified medal to registered farms in home page
+        homeMedalHtml1 = "<a class='home-fluid-thumbnail-grid-author-name certifiedFarmMedalInGrid' style='margin-left: 10em; margin-top: 0.2em' href='javascript:void(0);' title=\""+titleText+"\"><img style='margin-left: 10px; float: left; width: 24px' src='https://raw.githubusercontent.com/UPICKO/external_files/master/images/certified.png'/></a>";
+        homeMedalHtml2 = "<a class='certifiedFarmMedalInGrid' href='javascript:void(0);' title=\""+titleText+"\"><img style='margin-left: 3em; margin-top: 0.2em; float: left; width: 24px' src='https://raw.githubusercontent.com/UPICKO/external_files/master/images/certified.png'/></a>";
+        homeMedalHtml3 = "<a class='certifiedFarmMedalInMap' href='javascript:void(0);' title=\""+titleText+"\"><img style='margin-left: 3em; margin-top: 0.2em; float: left; width: 20px' src='https://raw.githubusercontent.com/UPICKO/external_files/master/images/certified.png'/></a>";
+        if($(".home-fluid-thumbnail-grid-item").length || $('#map-canvas').length) {
+            $.getScript( "https://code.jquery.com/ui/1.12.1/jquery-ui.js", function( data, textStatus, jqxhr ) {
+                if($(".home-fluid-thumbnail-grid-item").length) {
+                    // Add certified medal to registered farms in grid view
+                    addCertifiedMedalInHomePage();
+                    invokeTooltip();
+
+                    $(".home-fluid-thumbnail-grid").bind("DOMNodeInserted",function(e){
+                        var element = e.target;
+                        var autherNameLinklength = $(element).find(".home-fluid-thumbnail-grid-author-name").length;
+                        var autherEle = autherNameLinklength ?  $(element).find(".home-fluid-thumbnail-grid-author-name") : $(element).find(".home-fluid-thumbnail-grid-details-author-name");
+                        if(autherEle.length) {
+                            if(autherEle.attr("title") != 'Upicko') {
+                                if(autherEle.find('.certifiedFarmMedalInGrid').length)
+                                    return;
+                                if(autherNameLinklength)
+                                    autherEle.after(homeMedalHtml1);
+                                else
+                                    autherEle.after(homeMedalHtml2);
+                                invokeTooltip();
+                                event.stopPropagation();
+                            }
+                        }
+                    });
+                } else {
+                    // Add certified medal to registered farms in map view
+                    $("body").on('DOMSubtreeModified', "#map-canvas", function() {
+                        if($('.bubble-details').is(':visible')) {
+                            autherEle = $('.bubble-details .bubble-author a');
+                            if(autherEle.attr("title") != 'Upicko') {
+                                if($('.bubble-details').find('.certifiedFarmMedalInMap').length)
+                                    return;
+
+                                var bubblePriceEle = $('.bubble-details').find('.bubble-price');
+                                if($.trim(bubblePriceEle.html()) == "") {
+                                    bubblePriceEle.html(homeMedalHtml3);
+                                    invokeTooltip();
+                                    event.stopPropagation();
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+        }
+
+        // Add certified medal to registered farms in home page
+        function addCertifiedMedalInHomePage() {
+            var autherNameLinklength = $(".home-fluid-thumbnail-grid-item .home-fluid-thumbnail-grid-author-name").length;
+            var autherEleList = autherNameLinklength ?  $(".home-fluid-thumbnail-grid-item .home-fluid-thumbnail-grid-author-name") : $(".home-fluid-thumbnail-grid-item .home-fluid-thumbnail-grid-details-author-name");
+            if(autherEleList.length) {
+                autherEleList.each(function (index) {
+                    if($(this).attr("title") != 'Upicko') {
+                        if($(this).find('.certifiedFarmMedalInGrid').length)
+                            return;
+                        if(autherNameLinklength)
+                            $(this).after(homeMedalHtml1);
+                        else
+                            $(this).after(homeMedalHtml2);
+                    }
+                });
+            }
+        }
     }
 });
 
@@ -648,7 +727,32 @@ $(window).on('load', function () {
     if($("#spinner_landing_page").length) {
         $("#spinner_landing_page").remove();
     }
+    setTimeout(function() {
+        $("a[title='Sumo']").remove();
+    }, 2000);
 });
+
+
+function invokeTooltip() {
+    $('.certifiedFarmMedalInGrid, .certifiedFarmMedalInMap').tooltip({
+        track: false,
+        content: function () {
+            return $(this).prop('title');
+        },
+        close: function(event, ui){
+            ui.tooltip.hover(
+                function () {
+                    $(this).stop(true).fadeTo(400, 1);
+                },
+                function () {
+                    $(this).fadeOut("400", function(){
+                        $(this).remove();
+                    })
+                }
+            );
+        }
+    });
+}
 
 // Move search bar function
 function processMoveSearchBar() {

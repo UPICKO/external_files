@@ -218,3 +218,15 @@
     display: none !important;
 }
 
+.home-fluid-thumbnail-grid-details-author-name {
+    width: inherit;
+}
+
+.home-fluid-thumbnail-grid-details-distance {
+    width: inherit;
+    float: right;
+}
+
+.ui-tooltip {
+    max-width: 600px !important;
+}
