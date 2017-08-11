@@ -1,185 +1,25 @@
-//NO PYO AVAILABLE! SHED DOOR SALES ONLY.
-featureFarmsInfo = [
-    {imageUrl:"https://raw.githubusercontent.com/UPICKO/external_files/master/images/banner_example_etsy_rayner.png", hrefUrl:"https://www.upicko.com/en/listings/381521-raynerorchard-farms-upick-vic"},
-// 	{imageUrl:"https://raw.githubusercontent.com/UPICKO/external_files/master/images/banner_example_etsy_gateway.png", hrefUrl:"https://www.upicko.com/en/listings/378583-gatewayestate-indoor-strawberry-upick-vic"}
-];
-
-fruitIconsInfo = {
-    "apple":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/apple.png",
-    "blackberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/blackberries.png",
-    "blackcurrant":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/blackcurrant.png",
-    "blueberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/blueberries.png",
-    "capsicum":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/capsicum.png",
-    "cheries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/cheries.png",
-    "chestnuts":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/chestnuts.png",
-    "gooseberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/gooseberries.png",
-    "grapes":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/grapes.png",
-    "lemon":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/lemon.png",
-    "mandarine":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/mandarine.png",
-    "oranges":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/oranges.png",
-    "plums":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/plums.png",
-    "raspbeerries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/raspbeerries.png",
-    "strawberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/strawberries.png",
-    "tomatos":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/tomatos.png",
-    "kiwifruit":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/kiwifruit.png",
-    "nectarines":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/nectarines.png",
-    "peaches":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/peaches.png",
-    "apricots":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/apricots.png",
-    "figs":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/figs.png",
-    "bayberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/bayberries.png",
-    "quinces":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/quinces.png",
-    "boysonberries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/boysonberries.png",
-    "vegies":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/vegies.png",
-    "sourcherries":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/sourcherries.png",
-    "christmas_tree":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/christmas_tree.png",
-    "pear":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/pear.png",
-    "fruits":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/fruits.png",
-    "loquat":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/loquat.png",
-    "wattermelon":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/wattermelon.png",
-    "longan":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/longan.png",
-    "youngberry":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/youngberry.png",
-    "loganberry":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/loganberry.png",
-    "marionberry":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/marionberry.png",
-    "walnuts":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/walnuts.png",
-    "honey":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/honey.png",
-    "persimmons":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/persimmons.png",
-    "feijoas":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/feijoas.png",
-    "tropicalFruits":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/tropicalFruits.png",
-    "chocolate":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/chocolate.png",
-    "mango":"https://raw.githubusercontent.com/UPICKO/external_files/master/images/fruit_icon_png/mango.png",
-};
-
-stateInfo = [
-    "NSW", "VIC", "QLD", "SA", "TAS", "WA", "NT"
-]
-
-inSeasonFruits = [
-    "Mandarines", "Kiwi Fruit", "Strawberries"
-]
-
-titleText = "" +
-    "<div style='padding: 5px;'>" +
-    "   <div style='margin-bottom: 5px;'>" +
-    "       <b>Upicko Certified Farm</b>" +
-    "   </div>" +
-    "   <ol style='list-style: decimal; margin-left: 30px; margin-right: 20px;'>" +
-    "       <li>Information updated in real time by farmer</li>" +
-    "       <li>Buy fresh fruit/vegie online from farm</li>" +
-    "       <li>Send private message to farmers</li>" +
-    "   </ol>" +
-    "</div>";
-
 $(function() {
-    if(typeof localStorage != 'undefined') {
-        var firstTime = localStorage.getItem("first_time");
-        if(firstTime != "1") {
-            localStorage.setItem("first_time","1");
-        }
-    }
-
-    //$('#homepage-filters').show();
-    if(window.location.href == 'https://www.upicko.com/' || window.location.href == 'https://www.upicko.com') {
-        if(!checkTemplateLiteralSupported()) {
-            alert("Your browser is not supported. Please consider using Chrome, Firefox or Microsoft Edge");
-        } else {
-            $('#homepage-filters').remove();
-            $("body").append("<div id='spinner_landing_page' style='margin-top: 10px; text-align: center'><img width='80em' src='https://raw.githubusercontent.com/UPICKO/external_files/master/images/spinner.gif'/></div>");
-            $.getScript( "https://drive.google.com/uc?export=download&id=0B5fEP3aSxchLVzZBLTZBZUlWZ0E", function( data, textStatus, jqxhr ) {
-                $("body").append(landingPageHtml);
-            });
-        }
-    } else if(window.location.href == 'https://www.upicko.com/en/' || window.location.href == 'https://www.upicko.com/en') {
-        window.location = "https://www.upicko.com/en/?category=u-pick-access";
-    } else if(window.location.href == 'https://www.upicko.com/zh/' || window.location.href == 'https://www.upicko.com/zh') {
-        window.location = "https://www.upicko.com/zh/?category=u-pick-access";
-    } else {
-        $('#homepage-filters').show();
-    }
-
-    // Clear the query text when the query is state
-    if($(".SearchBar__keywordInput__2HTav").length) {
-        var q = getUrlParameter("q");
-        if(q) {
-            if(jQuery.inArray(q, stateInfo) != -1)
-                $(".SearchBar__keywordInput__2HTav").val("")
-        }
-    }
-
-    if(window.location.href.indexOf("/listings/") > 0) {
-        //Load the farmer's list in listing detail page
-        if($("#listing-author-link").length > 0 && $("#listing-author-link").attr('href') && $("#listing-author-link").text() != 'Upicko') {
-            $.ajax({
-                type: "GET",
-                url: $("#listing-author-link").attr('href'),
-                success: function (resultData) {
-                    var profileListingsList = $('#profile-listings-list', $(resultData));
-                    var profileListLabel = profileListingsList.prev();
-                    var listingDetailContainer = $('.page-content .wrapper');
-                    listingDetailContainer.append($(profileListLabel.html() + profileListingsList.html()));
-                },
-                error: function (xhr, ajaxOptions, thrownError) {
-                    console.log(xhr);
-                }
-            });
-        }
-
-        //Add address info below the small map
-        if($(".map-link a").length) {
-            var openInGoogleMapHref = $(".map-link a").attr("href");
-            var decodedUri = decodeURIComponent(openInGoogleMapHref);
-            var addressString = decodedUri.substring(27);
-            var addressStringFinal = addressString.replaceAll("+", " ");
-            $(".map-link").before("<div style='margin-top: 5px;'><i>" + addressStringFinal + "</i></div>");
-        }
-
-        //Add farm's name at the beginning of the page
-        if($(".wrapper").length) {
-            var url = window.location.href;
-            var farmNameWidthId = url.substring(35, url.length);
-            var farmNameWithHyphen = farmNameWidthId.substring(farmNameWidthId.indexOf("-") + 1);
-            var farmName = farmNameWithHyphen.replaceAll("-", " ");
-            var farmNameWithCamelCase = toTitleCase(farmName);
-
-            var state = farmNameWithCamelCase.substring(farmNameWithCamelCase.lastIndexOf(" ") + 1, farmNameWithCamelCase.length);
-            var upperCaseState = state.toUpperCase();
-            if(jQuery.inArray(upperCaseState, stateInfo) != -1) {
-                var farmnameWithoutState = farmNameWithCamelCase.substring(0, farmNameWithCamelCase.lastIndexOf(" "));
-                farmNameWithCamelCase = farmnameWithoutState + " - " + upperCaseState;
-            }
-
-            $(".wrapper").prepend("<div style='margin-bottom: 20px; font-size: 27px'>" + farmNameWithCamelCase + "</div>");
-        }
-    }
-
     //Remove the category row in home page
-    if($(".home-toolbar").length && $(".home-toolbar").next().length && $(".home-toolbar").next().find('.row').length && $(".home-toolbar").next().find('.row').first().length) {
+    if ($(".home-toolbar").length && $(".home-toolbar").next().length && $(".home-toolbar").next().find('.row').length && $(".home-toolbar").next().find('.row').first().length) {
         $(".home-toolbar").next().find('.row').first().remove();
     }
 
     //Add banner page with search box in home page
-    if($(".home-toolbar").length && $(".Topbar__topbar__7GUWt").length) {
+    if ($(".home-toolbar").length && $(".Topbar__topbar__7GUWt").length) {
         $(".Topbar__topbar__7GUWt").after(getBannerHtml());
         // Move search bar in home page
         $("#topbar-container .SearchBar__root__2hIPj").show();
         processMoveSearchBar();
-        $(window).resize(function() {
+        $(window).resize(function () {
             processMoveSearchBar();
         });
     }
 
     //Display marketing banner on home page for private web mode
-    if($('.community-customization-wrapper').length && $(".marketplace-lander").length) {
+    if ($('.community-customization-wrapper').length && $(".marketplace-lander").length) {
         $(".marketplace-lander").show();
     }
 
-    if(typeof map != 'undefined' && map) {
-        // Disable clickable landmarks in google map
-        map.setClickableIcons(false);
-        // Disable mouse scroll zoom
-        map.setOptions({ scrollwheel: false });
-        // Enable Scale control
-        map.setOptions({ zoomControl: true});
-    }
     // Disable google map cluster for home page
     if(typeof markerCluster != 'undefined' && markerCluster) {
         if(window.location.href.indexOf('category=u-pick-access') !== -1) {
@@ -197,14 +37,14 @@ $(function() {
             switch(markerId) {
                 case 391387: //Farnsworth Apple & Cherry Orchard
                 case 391381: //Ripe Ready Cherry Farm
-                case 351511: //Blue Hill Cherries Upick - VIC
+                case 435257: //Bluehill Upick Cherries - VIC
                 case 391411: //Chappies Upick - VIC
                 case 391927: //Fair View Hill Berries - VIC
-                case 371897: //Cobradah Upick - VIC
+                case 435260: //Cobradah Upick - VIC
                 case 391337: //Seville Farm - VIC
-                case 370827: //Cherry Bomb Cherries - VIC
-                case 370062: //Cherry Heaven - VIC
-                case 371883: //Cherry Hill Upick - VIC
+                case 435265: //Cherry Bomb - VIC
+                case 435273: //Cherry Heaven - VIC
+                case 435261: //Cherry Hill Upick - VIC
                 case 391395: //Lanidale Cherry Orchard - VIC
                 case 391921: //Big Fella Cherries - VIC
                 case 392722: //hillsideharvest - NSW
@@ -238,12 +78,12 @@ $(function() {
                     marker.setIcon(fruitIconsInfo["cheries"]);
                     break;
                 case 391934: //Emily Hill Farm - VIC
-                case 370298: //Avonsleigh Berries - VIC
+                case 435272: //Avonsleigh Berries - VIC
                 case 391372: //Folly Farm Blueberry - VIC
                 case 391897: //The Big Berry - VIC
                 case 391390: //Hillbilly Farm - VIC
                 case 391923: //Summer Berries - VIC
-                case 370339: //Buninyong Berries - VIC
+                case 435269: //Buninyong Berries - VIC
                 case 391888: //Otway Blueberries - VIC
                 case 391348: //Tuckerberry Hill - VIC
                 case 392715: //clyderiverberryfarm - NSW
@@ -252,16 +92,16 @@ $(function() {
                     marker.setIcon(fruitIconsInfo["blueberries"]);
                     break;
                 case 391930: //Fielderberry Farm - VIC
-                case 371918: //All Berries Upick - VIC
+                case 435259: //Jay Berries - VIC
                     marker.setIcon(fruitIconsInfo["blackberries"]);
                     break;
-                case 371933: //Lomas Orchards - VIC
+                case 435190: //Lomas Orchards - VIC
                 case 398901: //Spring Valley Organic Orchard - WA
                     marker.setIcon(fruitIconsInfo["plums"]);
                     break;
                 case 391385: //Sunny Ridge Strawberry Farm - VIC
-                case 351504: //Upick Berries - VIC
-                case 378583: //GatewayEstate Indoor Strawberry Upick - VIC
+                case 435256: //Bluehill Upick Berries - VIC
+                case 435826: //GatewayEstate Indoor Strawberry Upick - VIC
                 case 391908: //Naturipe Fruits - VIC
                 case 397838: //McMartins Strawberry Farm - QLD
                 case 397851: //Rolin Farms - QLD
@@ -279,7 +119,7 @@ $(function() {
                 case 413272: //Pick Your Own Strawberry Farm - WA
                     marker.setIcon(fruitIconsInfo["strawberries"]);
                     break;
-                case 381521: //RaynerOrchard Farms Upick - VIC
+                case 435816: //RaynerOrchard Farms Upick - VIC
                 case 407912: //Montacute Valley Orchards - SA
                     marker.setIcon(fruitIconsInfo["peaches"]);
                     break;
@@ -717,21 +557,6 @@ $(function() {
     }
 });
 
-$(window).on('load', function () {
-    if($("#upicko_landing_page").length) {
-        $("#upicko_landing_page").show();
-        setTimeout(function() {
-            $(".sumome-share-client").attr("style", "display: inline !important");
-        }, 2000);
-    }
-    if($("#spinner_landing_page").length) {
-        $("#spinner_landing_page").remove();
-    }
-    setTimeout(function() {
-        $("a[title='Sumo']").remove();
-    }, 2000);
-});
-
 
 function invokeTooltip() {
     $('.certifiedFarmMedalInGrid, .certifiedFarmMedalInMap').tooltip({
@@ -830,45 +655,4 @@ function clickCategoryCheckbox(category) {
             url = url.replace("category=" + categoryInUrl, "");
     }
     window.location = url;
-}
-
-function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
-
-String.prototype.replaceAll = function(search, replace)
-{
-    //if replace is not sent, return original string otherwise it will
-    //replace search string with 'undefined'.
-    if (replace === undefined) {
-        return this.toString();
-    }
-
-    return this.replace(new RegExp('[' + search + ']', 'g'), replace);
-};
-
-function checkTemplateLiteralSupported() {
-    try {
-        eval("tt=``;");
-        return true;
-    } catch (e) {
-        return false;
-    }
-}
-
-function toTitleCase(str) {
-    return str.replace(/(?:^|\s)\w/g, function(match) {
-        return match.toUpperCase();
-    });
 }

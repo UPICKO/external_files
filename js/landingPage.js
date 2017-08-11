@@ -1,6 +1,6 @@
 landingPageHtml = `
 <div id="upicko_landing_page" class="upicko page-landing responsive components-built" cz-shortcut-listen="true" style="display: none;">
-	<div class="hero-container" style="height: 171px; padding: 30px;">
+	<div class="hero-container" style="height: 190px; padding: 30px;">
 		<div class="layout-centered-content">
 			<video autoplay="true" loop="" poster="https://raw.githubusercontent.com/UPICKO/external_files/master/images/strawberry_background_1600x480.png" id="bgvid"></video>
 		    <h1 class="entry-title">Find Australian Upick Farms</h1>    
