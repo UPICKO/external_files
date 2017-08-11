@@ -68,3 +68,40 @@ titleText = "" +
     "       <li>Send private message to farmers</li>" +
     "   </ol>" +
     "</div>";
+
+farm_detail_template = ""+
+    "<div>\n"+
+    "    <div class='desc_template_label'>Notice</div>\n"+
+    "    <div class='desc_template_content'>Fill Important notice here. E.g. We do not open on Christmas Day!</div>\n"+
+    "\n"+
+    "    <div class='desc_template_label'>Fruits in season</div>\n"+
+    "    <ul class='desc_template_ul'>\n"+
+    "        <li>Apples (Mar - Aug)</li>\n"+
+    "        <li>Nectarines / Peaches (Mar - Aug)</li>\n"+
+    "        <li>Raspberries (Nov - Feb)</li>\n"+
+    "    </ul>\n"+
+    "\n"+
+    "    <div class='desc_template_label'>Access fees</div>\n"+
+    "    <div class='desc_template_content'>\n"+
+    "        $10 / Adult, $5 / Child\n"+
+    "    </div>\n"+
+    "\n"+
+    "    <div class='desc_template_label'>Fruit Price</div>\n"+
+    "    <ul class='desc_template_ul'>\n"+
+    "        <li>Apples: $3 / Kilo</li>\n"+
+    "        <li>Peaches / Nectarines: $4 / Kilo</li>\n"+
+    "        <li>Raspberries: $10 / Kilo</li>\n"+
+    "    </ul>\n"+
+    "\n"+
+    "    <div class='desc_template_label'>Facilities</div>\n"+
+    "    <ul class='desc_template_ul'>\n"+
+    "        <li>Playgrounds</li>\n"+
+    "        <li>Picnic tables</li>\n"+
+    "        <li>Kiosk (Coffee, Home-made Icecream, Snacks)</li>\n"+
+    "    </ul>\n"+
+    "\n"+
+    "    <div class='desc_template_label'>Brief Farm Description</div>\n"+
+    "    <div class='desc_template_content'>\n"+
+    "        We have apples, honey, alcoholic and non-alcoholic apple cider, apple cider vinegar- with the mother and unpasteurised. We have delicious honey meads (honey dessert wines). We carry a wide range of apple and fruit products including jam. We have special prices on bulk apple purchases.Tours of the farm Tours are available of the farm at certain times of the year in small groups to provide personal attention and a detailed look at what is happening on the farm.\n"+
+    "    </div>\n"+
+    "</div>\n";
