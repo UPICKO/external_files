@@ -230,3 +230,7 @@
 .ui-tooltip {
     max-width: 600px !important;
 }
+
+.listing-details-container .row:nth-child(2) .col-12 {
+    display: none;
+}
